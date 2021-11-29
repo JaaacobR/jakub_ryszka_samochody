@@ -1,0 +1,62 @@
+tr,
+td,
+th {
+  border: 1px solid black;
+  text-align: center;
+}
+
+select {
+  background-color: aqua;
+}
+.cancel {
+  margin: 20px;
+  border-radius: 7px;
+  color: blue;
+  border-color: blue;
+  padding: 5px;
+  font-weight: 600;
+}
+
+.update {
+  margin: 20px;
+  border-radius: 7px;
+  color: magenta;
+  border-color: magenta;
+  padding: 5px;
+  font-weight: 600;
+}
+
+.delete {
+  margin: 20px;
+  border-radius: 7px;
+  color: red;
+  border-color: red;
+  font-weight: 600;
+  padding: 5px;
+}
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#container > div > table {
+  flex-grow: 2;
+}
+#container > form {
+  flex-grow: 0.3;
+}
+
+#cars td {
+  width: 9vw;
+}
+#cars .index1 {
+  width: 20px;
+}
+#adding td {
+  width: 8vw;
+  padding: 10px;
+}
+.btn {
+  display: block;
+  margin: 10 auto;
+}

@@ -1,0 +1,98 @@
+<div id="container">
+  <form action="/handleForm" method="get">
+    <h1>Dane pojazdu</h1>
+    <table id="adding">
+      <tr><td>Ubezpieczony</td><td><input
+            type="checkbox"
+            name="ubezpieczenie"
+          /></td></tr>
+      <tr><td>benzyna</td><td><input type="checkbox" name="benzyna" /></td></tr>
+      <tr><td>Uszkodzony</td><td><input
+            type="checkbox"
+            name="uszkodzenie"
+          /></td></tr>
+      <tr><td>4x4</td><td><input type="checkbox" name="xdrive" /></td></tr>
+    </table>
+    <button class="btn" type="submit">Dodaj do bazy</button>
+  </form>
+
+  <div>
+    {{#if edit}}
+      <h1>wszystkie pojazdy - tryb edycji:</h1>
+    {{else}}
+      <h1>wszystkie pojazdy:</h1>
+    {{/if}}
+    <table id="cars">
+
+      <tr><th></th><th>Ubezpieczony</th><th>Benzyna</th><th>Uszkodzony</th><th
+        >4x4</th><th></th><th></th></tr>
+      {{#each items}}
+        {{#if selected}}
+          <form>
+            <tr>
+              <td class="index1">{{Add @index}}</td>
+              <td><select name="selectA">
+                  <option>TAK</option>
+                  <option>NIE</option>
+                  <option value="BRAK">BRAK DANYCH</option>
+                </select></td>
+              <td><select name="selectB">
+                  <option>TAK</option>
+                  <option>NIE</option>
+                  <option value="BRAK">BRAK DANYCH</option>
+                </select></td>
+              <td><select name="selectC">
+                  <option>TAK</option>
+                  <option>NIE</option>
+                  <option value="BRAK">BRAK DANYCH</option>
+                </select></td>
+              <td><select name="selectD">
+                  <option>TAK</option>
+                  <option>NIE</option>
+                  <option value="BRAK">BRAK DANYCH</option>
+                </select></td>
+              <td>
+                <input type="hidden" value="{{_id}}" name="records" /><button
+                  class="update"
+                  formaction="/actionUPDATE"
+                >UPDATE</button></td>
+              <td><button class="cancel" formaction="/">CANCEL</button></td>
+
+            </tr>
+          </form>
+
+        {{else}}
+          <tr>
+            <td class="index1">{{Add @index}}</td>
+            <td>{{a}}</td>
+            <td>{{b}}</td>
+            <td>{{c}}</td>
+            <td>{{d}}</td>
+            <form method="GET">
+              <td><input type="hidden" value="{{_id}}" name="record" /><input
+                  type="hidden"
+                  name="deleteInput"
+                  id="{{_id}}"
+                /><button
+                  class="delete"
+                  onclick='check("{{_id}}")'
+                  formaction="/actionA"
+                >DELETE</button></td>
+              <td><button
+                  class="cancel"
+                  formaction="/actionB"
+                >EDIT</button></td>
+            </form>
+          </tr>
+
+        {{/if}}
+      {{/each}}
+    </table>
+  </div>
+
+</div>
+<script>
+  function check(id) { let isDelete = confirm("Czy usunąć?"); if(isDelete){
+  document.getElementById(id).value = "delete"; }else{
+  document.getElementById(id).value = "save"; } }
+</script>
