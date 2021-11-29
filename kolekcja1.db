@@ -1,7 +1,11 @@
-{"a":"NIE","b":"NIE","c":"TAK","d":"TAK","_id":"63UpHoICjDA0v1Lq"}
 {"a":"TAK","b":"TAK","c":"TAK","d":"BRAK","_id":"nXvzJdJcmqLpa1Eg"}
 {"a":"TAK","b":"BRAK","c":"BRAK","d":"TAK","_id":"tlKlkAVal9RbeyN8"}
-{"a":"TAK","b":"TAK","c":"TAK","d":"TAK","_id":"vGDLhGqqfN8gdp4I"}
 {"a":"NIE","b":"NIE","c":"TAK","d":"TAK","_id":"vGJ0cvYmOytAugP7"}
-{"a":"TAK","b":"TAK","c":"NIE","d":"NIE","_id":"7OcuWvjiQjWO3ZD3"}
-{"$$deleted":true,"_id":"7OcuWvjiQjWO3ZD3"}
+{"a":"TAK","b":"TAK","c":"NIE","d":"NIE","_id":"vcLpU2JGMrLm2ifG"}
+{"a":"NIE","b":"TAK","c":"TAK","d":"NIE","_id":"Nmc5jWiQzIqDq7KX"}
+{"$$deleted":true,"_id":"vcLpU2JGMrLm2ifG"}
+{"a":"TAK","b":"TAK","c":"TAK","d":"TAK","_id":"vGDLhGqqfN8gdp4I"}
+{"a":"TAK","b":"BRAK","c":"BRAK","d":"TAK","_id":"vGDLhGqqfN8gdp4I"}
+{"$$deleted":true,"_id":"Nmc5jWiQzIqDq7KX"}
+{"a":"TAK","b":"TAK","c":"TAK","d":"TAK","_id":"vGDLhGqqfN8gdp4I"}
+{"a":"NIE","b":"NIE","c":"TAK","d":"TAK","_id":"63UpHoICjDA0v1Lq"}
